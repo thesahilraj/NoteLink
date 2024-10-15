@@ -1,0 +1,168 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/searchbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/back"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginRight="8dp"
+				android:padding="8dp"
+				android:src="@drawable/ic_back_grey"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="2dp"
+				android:layout_marginBottom="16dp"
+				android:padding="8dp"
+				android:background="#E0E0E0"
+				android:orientation="horizontal" />
+			<ImageView
+				android:id="@+id/selectfile"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/add"
+				android:scaleType="fitCenter" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Select File"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/login_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFF"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<EditText
+				android:id="@+id/filename"
+				android:layout_width="370dp"
+				android:layout_height="45dp"
+				android:layout_marginLeft="30dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginBottom="8dp"
+				android:padding="8dp"
+				android:background="#F5F5F5"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="File Name...."
+				android:textColorHint="#9E9E9E"
+				android:singleLine="true" />
+			<EditText
+				android:id="@+id/couse"
+				android:layout_width="370dp"
+				android:layout_height="45dp"
+				android:layout_marginLeft="30dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginBottom="8dp"
+				android:padding="8dp"
+				android:background="#F5F5F5"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="Enter Course/Class"
+				android:textColorHint="#9E9E9E"
+				android:singleLine="true" />
+			<EditText
+				android:id="@+id/subject"
+				android:layout_width="370dp"
+				android:layout_height="45dp"
+				android:layout_marginLeft="30dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginBottom="8dp"
+				android:padding="8dp"
+				android:background="#F5F5F5"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="Enter Subject"
+				android:textColorHint="#9E9E9E"
+				android:singleLine="true" />
+			<EditText
+				android:id="@+id/description"
+				android:layout_width="370dp"
+				android:layout_height="45dp"
+				android:layout_marginLeft="30dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginBottom="8dp"
+				android:padding="8dp"
+				android:background="#F5F5F5"
+				android:gravity="center_vertical"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="Enter Short Description...."
+				android:textColorHint="#9E9E9E"
+				android:singleLine="true" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+			<Button
+				android:id="@+id/buttonupload"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="30dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginBottom="8dp"
+				android:padding="8dp"
+				android:background="#212121"
+				android:text="UPLOAD "
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Button"
+			android:textSize="12sp"
+			android:textColor="#000000" />
+	</LinearLayout>
+</LinearLayout>

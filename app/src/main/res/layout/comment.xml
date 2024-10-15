@@ -1,0 +1,67 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+			android:orientation="horizontal"
+			android:layout_weight="1">
+			<ListView
+				android:id="@+id/listview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:choiceMode="none" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<EditText
+				android:id="@+id/edittext1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:hint="Comment here..."
+				android:textColorHint="#9E9E9E"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/imageview1"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:padding="8dp"
+				android:src="@drawable/ic_send_grey"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
